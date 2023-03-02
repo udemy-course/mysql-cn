@@ -16,7 +16,7 @@ body:
     attributes:
       label: 问题发生在第几章第几节
       description: |
-        提供章节，错误信息log
+        提供章节信息，错误信息log, 或者截图
     validations:
       required: true
 
@@ -32,14 +32,7 @@ body:
     id: osVersion
     attributes:
       label: 测试用的Mysql版本
-      value: |
-        <details>
-
-        ```console
-        # On Linux:
-        $ sh-4.4# mysql --version
-        mysql  Ver 8.0.32 for Linux on aarch64 (MySQL Community Server - GPL)
-   
-        </details>
+    validations:
+      required: false
 
 
