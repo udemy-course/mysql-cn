@@ -9,6 +9,13 @@ Start the container
 docker run --name mysql-demo -e MYSQL_ROOT_PASSWORD=root -d  -v $(pwd):/test mysql:5.7
 ```
 
+如果要用mysql8，可以把下面的tag改成 8.0.30 (more versions can be found  https://hub.docker.com/_/mysql/tags?page=1)
+
+```
+docker run --name mysql-demo -e MYSQL_ROOT_PASSWORD=root -d  -v $(pwd):/test mysql:8.0.30
+```
+
+
 ```
 @xiaopeng163 ➜ /workspaces/mysql-cn (master) $ docker ps
 CONTAINER ID   IMAGE       COMMAND                  CREATED              STATUS              PORTS                 NAMES
